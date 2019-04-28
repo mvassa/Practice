@@ -1,0 +1,50 @@
+#include "pch.h"
+#include <iostream>
+
+using namespace std;
+
+void bubble(int* array,int s);
+void bubble(double* array,int s);
+
+int main()
+{
+	int s = 5;
+	int a[5] = { 19,50,76,98,62 };
+	double ar[5] = { 4.5,86.09,96,853.1,15.4 };
+	sort(a, s);
+	sort(ar, s);
+  
+	for (int i = 0; i < s; i++)
+  {
+		cout <<"int array:"<< a[i];
+		cout << '\t';
+		cout <<"double array:"<< ar[i]<<endl;
+	}
+  
+	cin.get(); cin.get();
+  
+  system("pause");
+	return 0;
+}
+
+void sort(int* array, int s)
+{
+	for (int i = 0; i < s; i++)
+  {
+		for (int j = 0; j < s -1; j++)
+    {
+			if (array[i] > array[j]) swap(array[i], array[j]);
+		}
+	}
+}
+
+void sort(double* array, int s)
+{
+	for (int i = 0; i < s; i++)
+  {
+		for (int j = 0; j < s - 1; j++)
+    {
+			if (array[i] > array[j]) swap(array[i], array[j]);
+		}
+	}
+}
