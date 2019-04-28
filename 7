@@ -1,0 +1,68 @@
+#include "pch.h"
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Animals {
+protected:
+	string nm;
+	int ag;
+	int we;
+public:
+	virtual void s() = 0;
+	virtual void hab() = 0;
+
+};
+class Cat : public Animals{
+	Cat(string n,int a,int w){
+		nm = n;
+		ag = a;
+		we = w;
+	};
+  
+	void s()
+  {
+    cout << "Mur" << endl;
+  }
+  
+	void hab()
+  {
+    cout << "Land" << endl;
+  }
+};
+class Puppy : public Animals {
+	Puppy(string n, int a, int w) {
+		nm = n;
+		ag = a;
+		we = w;
+	};
+  
+	void s()
+  {
+    cout << "Tyaf" << endl;
+  }
+	void hab()
+  {
+  cout << "Land" << endl;
+  }
+
+};
+class Fish : public Animals {
+	fish(string n, int a, int w) {
+		nm = n;
+		ag = a;
+		we = w;
+	};
+  
+	void s()
+  {
+    cout << "Omg" << endl;
+  }
+  
+	void hab()
+  {
+    cout << "Water" << endl;
+  }
+
+};
