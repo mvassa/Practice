@@ -6,13 +6,13 @@ using namespace std;
 
 class Animals
 {
-protected:
-	string nm;
-	int ag;
-	int we;
-public:
-	virtual void s() = 0;
-	virtual void hab() = 0;
+	protected:
+		string nm;
+		int ag;
+		int we;
+	public:
+		virtual void s() = 0;
+		virtual void hab() = 0;
 
 };
 
@@ -26,14 +26,14 @@ class Cat : public Animals
 	};
   
 	void s()
-  {
+  	{
   	cout << "Mur" << endl;
-  }
+  	}
   
 	void hab()
-  {
+ 	{
   	cout << "Land" << endl;
-  }
+  	}
 };
 
 class Puppy : public Animals 
