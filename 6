@@ -15,7 +15,7 @@ class Kv : public Property {
 	public:
 		Kv(double a) { a = a; }
 		double tax()
-    {
+		{
 			return ab / 1000;
 		}
 };
@@ -24,7 +24,7 @@ class Car : public Property {
 	public:
 		Car (double a) { ab = a; }
 		double tax()
-    {
+		{
 			return ab / 500;
 		}
 };
@@ -33,7 +33,7 @@ class Dacha : public Property {
 	public:
 		Dacha(double a) { ab = a; }
 		double tax()
-    {
+		{
 			return ab / 1000;
 		}
 };
@@ -52,14 +52,14 @@ int main(int argc, char* argv[])
 	a[6] = new Dacha(5000000);
   
 	for (int i = 0; i < 7; i++)
-  {
+	{
 		cout << "Налог на имущество составляет: " << a[i]->tax() << endl;
 	}
   
 	for (int i = 0; i < 7; i++)
-  {
-    delete a[i];
-  }
+	{
+		delete a[i];
+	}
   
 	delete[] a;
   
