@@ -4,7 +4,8 @@
 
 using namespace std;
 
-class Animals {
+class Animals
+{
 protected:
 	string nm;
 	int ag;
@@ -14,8 +15,11 @@ public:
 	virtual void hab() = 0;
 
 };
-class Cat : public Animals{
-	Cat(string n,int a,int w){
+
+class Cat : public Animals
+{
+	Cat(string n,int a,int w)
+	{
 		nm = n;
 		ag = a;
 		we = w;
@@ -31,38 +35,43 @@ class Cat : public Animals{
     cout << "Land" << endl;
   }
 };
-class Puppy : public Animals {
-	Puppy(string n, int a, int w) {
+
+class Puppy : public Animals 
+{
+	Puppy(string n, int a, int w) 
+	{
 		nm = n;
 		ag = a;
 		we = w;
 	};
   
 	void s()
-  {
-    cout << "Tyaf" << endl;
-  }
+	{
+  		cout << "Tyaf" << endl;
+	}
 	void hab()
-  {
-  cout << "Land" << endl;
-  }
+  	{
+ 		 cout << "Land" << endl;
+  	}
 
 };
-class Fish : public Animals {
-	fish(string n, int a, int w) {
+
+class Fish : public Animals
+{
+	fish(string n, int a, int w)
+	{
 		nm = n;
 		ag = a;
 		we = w;
 	};
   
 	void s()
-  {
-    cout << "Omg" << endl;
-  }
+  	{
+   		 cout << "Omg" << endl;
+ 	}
   
 	void hab()
-  {
-    cout << "Water" << endl;
-  }
-
+  	{
+    		cout << "Water" << endl;
+  	}
 };
